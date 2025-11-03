@@ -1,74 +1,69 @@
 import 'package:flutter/material.dart';
 
 abstract class Styles {
-  TextStyle Medium25(BuildContext context) {
+  static TextStyle Medium25(BuildContext context) {
     return TextStyle(
       color: Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 25),
-      fontFamily: "Inter_18pt",
       fontWeight: FontWeight.w500,
     );
   }
 
-  TextStyle Medium22(BuildContext context) {
+  static TextStyle Medium22(BuildContext context) {
     return TextStyle(
       color: Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 22),
-      fontFamily: "Inter_18pt",
       fontWeight: FontWeight.w500,
     );
   }
 
-  TextStyle SemiBold24(BuildContext context) {
+  static TextStyle SemiBold24(BuildContext context) {
     return TextStyle(
       color: Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 24),
-      fontFamily: "Inter_18pt",
       fontWeight: FontWeight.w600,
     );
   }
 
-  TextStyle SemiBold20(BuildContext context) {
+  static TextStyle SemiBold20(BuildContext context) {
     return TextStyle(
       color: Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 20),
-      fontFamily: "Inter_18pt",
       fontWeight: FontWeight.w600,
     );
   }
 
-  TextStyle SemiBold18(BuildContext context) {
+  static TextStyle SemiBold18(BuildContext context) {
     return TextStyle(
       color: Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 20),
-      fontFamily: "Inter_18pt",
       fontWeight: FontWeight.w600,
     );
   }
 
-  TextStyle Reguler18(BuildContext context) {
+  static TextStyle Reguler18(BuildContext context) {
     return TextStyle(
       color: Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 18),
-      fontFamily: "Inter_18pt",
+
       fontWeight: FontWeight.w400,
     );
   }
 
-  TextStyle Reguler20(BuildContext context) {
+  static TextStyle Reguler20(BuildContext context) {
     return TextStyle(
       color: Colors.black,
       fontSize: getResponsiveFontSize(context, fontSize: 18),
-      fontFamily: "Inter_18pt",
+
       fontWeight: FontWeight.w400,
     );
   }
 
-  TextStyle Reguler16(BuildContext context) {
+  static TextStyle Reguler16(BuildContext context) {
     return TextStyle(
       color: Color(0xff4C4C4C),
       fontSize: getResponsiveFontSize(context, fontSize: 18),
-      fontFamily: "Inter_18pt",
+
       fontWeight: FontWeight.w400,
     );
   }
