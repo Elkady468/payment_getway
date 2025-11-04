@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:payment/Features/presentation/views/payment_details.dart';
 import 'package:payment/Features/presentation/views/widgets/custom_button.dart';
-import 'package:payment/Features/presentation/views/widgets/order_info_item.dart';
 import 'package:payment/Features/presentation/views/widgets/order_info_section.dart';
 import 'package:payment/core/utils/constant.dart';
 import 'package:payment/core/utils/styles.dart';
@@ -25,7 +25,21 @@ class MyCartView extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: OrdeInfoSection(),
           ),
-          Padding(padding: const EdgeInsets.all(20.0), child: CustomButton()),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: CustomButton(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return PaymentDetails();
+                    },
+                  ),
+                );
+              },
+            ),
+          ),
           SizedBox(height: 15),
         ],
       ),
