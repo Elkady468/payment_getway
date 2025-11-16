@@ -3,4 +3,5 @@ abstract class Assets {
   static const String payPalImage = "assets/image/Paypal.svg";
   static const String cardImage = "assets/image/card.svg";
   static const String applePayImage = 'assets/image/applePay.svg';
+  static const String creditFrame = "assets/image/Frame 1.png";
 }

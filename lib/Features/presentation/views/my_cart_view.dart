@@ -28,6 +28,7 @@ class MyCartView extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: CustomButton(
+              text: "Complate Payment",
               onTap: () {
                 Navigator.push(
                   context,

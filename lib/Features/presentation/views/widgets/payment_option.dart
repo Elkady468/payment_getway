@@ -2,20 +2,46 @@ import 'package:flutter/material.dart';
 import 'package:payment/Features/presentation/views/widgets/payment_options_item.dart';
 import 'package:payment/core/utils/constant.dart';
 
-class PaymentOption extends StatelessWidget {
-  const PaymentOption({super.key});
+class PaymentOptionListView extends StatefulWidget {
+  const PaymentOptionListView({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(child: PaymentOptionsItem(image: Assets.cardImage)),
-        SizedBox(width: 20),
-        Expanded(child: PaymentOptionsItem(image: Assets.payPalImage)),
-        SizedBox(width: 20),
+  State<PaymentOptionListView> createState() => _PaymentOptionListViewState();
+}
 
-        Expanded(child: PaymentOptionsItem(image: Assets.applePayImage)),
-      ],
+class _PaymentOptionListViewState extends State<PaymentOptionListView> {
+  final List<String> paymentMethodItem = [
+    Assets.cardImage,
+    Assets.payPalImage,
+    Assets.applePayImage,
+  ];
+  @override
+  int activeIndex = 0;
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 73,
+      child: ListView.builder(
+        padding: EdgeInsets.zero,
+        scrollDirection: Axis.horizontal,
+        itemCount: paymentMethodItem.length,
+        itemBuilder: (context, index) {
+          return GestureDetector(
+            onTap: () {
+              if (activeIndex != index) {
+                activeIndex = index;
+                setState(() {});
+              }
+            },
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: PaymentOptionsItem(
+                image: paymentMethodItem[index],
+                isActive: activeIndex == index,
+              ),
+            ),
+          );
+        },
+      ),
     );
   }
 }
