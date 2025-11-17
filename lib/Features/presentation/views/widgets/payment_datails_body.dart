@@ -5,8 +5,6 @@ import 'package:payment/Features/presentation/views/thank_you_view.dart';
 import 'package:payment/Features/presentation/views/widgets/custom_button.dart';
 import 'package:payment/Features/presentation/views/widgets/custom_credit_card.dart';
 import 'package:payment/Features/presentation/views/widgets/payment_option.dart';
-import 'package:payment/Features/presentation/views/widgets/payment_options_item.dart';
-import 'package:payment/core/utils/constant.dart';
 
 class PaymentDetailsBody extends StatefulWidget {
   const PaymentDetailsBody({super.key});

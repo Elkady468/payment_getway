@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:payment/Features/presentation/views/widgets/payment_datails_body.dart';
-import 'package:payment/Features/presentation/views/widgets/payment_options_item.dart';
-import 'package:payment/core/utils/constant.dart';
 import 'package:payment/core/utils/styles.dart';
 
 class PaymentDetails extends StatelessWidget {
