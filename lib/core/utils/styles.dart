@@ -52,7 +52,7 @@ abstract class Styles {
 
   static TextStyle Reguler20(BuildContext context) {
     return TextStyle(
-      color: Colors.black,
+      color: Color(0xff2E2E2E),
       fontSize: getResponsiveFontSize(context, fontSize: 18),
 
       fontWeight: FontWeight.w400,

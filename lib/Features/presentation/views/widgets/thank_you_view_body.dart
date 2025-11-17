@@ -9,7 +9,7 @@ class ThankYouViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 50),
+      padding: const EdgeInsets.only(right: 32, left: 32, top: 60, bottom: 80),
       child: Stack(
         clipBehavior: Clip.none,
         children: [

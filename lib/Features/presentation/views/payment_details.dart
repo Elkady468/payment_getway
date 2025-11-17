@@ -8,7 +8,9 @@ class PaymentDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
         leading: IconButton(
           icon: Icon(Icons.arrow_back, size: 28, color: Colors.black),
           onPressed: () => Navigator.pop(context),

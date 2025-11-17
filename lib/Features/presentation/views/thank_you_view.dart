@@ -6,6 +6,12 @@ class ThankYouView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.white, body: ThankYouViewBody());
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Transform.translate(
+        offset: Offset(0, 50),
+        child: ThankYouViewBody(),
+      ),
+    );
   }
 }
